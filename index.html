@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Web Séisme</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#" data-section="accueil">Accueil</a></li>
+        <li><a href="#" data-section="carte">Carte interactive</a></li>
+        <li><a href="#" data-section="analyse">Analyse Raster</a></li>
+        <li><a href="#" data-section="dossier">Dossier Séisme</a></li>
+        <li><a href="#" data-section="tableau">Tableau de bord</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    
+    <aside class="sidebar">
+      <div class="logo-container">
+        <img src="logo.jpg" alt="Logo" class="logo">
+      </div>
+      <h2>Je cherche, je trouve...</h2>
+      <input type="text" placeholder="Rechercher...">
+      
+      <div class="connexion">
+        <h3>Se connecter</h3>
+        <input type="text" placeholder="Identifiant">
+        <input type="password" placeholder="Mot de passe">
+        <button>OK</button>
+      </div>
+      
+    </aside>
+  
+   
+    <section class="main-content">
+      <div class="content-row dynamic-section">
+      
+        
+        <div class="infos">
+          <h2>Le séisme d'Al Haouz, le plus puissant jamais enregistré au Maroc</h2>
+          <p>Le séisme de 2023 au Maroc ou séisme d'Al Haouz est le plus important tremblement de terre enregistré par  des stations sismiques de l'histoire du pays.</p>
+          <p>Le séisme d'Al Haouz, survenu le 8 septembre 2023 à 22 h 11 min.</p>
+          <p style="margin-bottom: 20px;"></pstyle>>D’une magnitude de 7, faisant 1.037 morts et 1.204 blessés</p>
+          <p>dont 721 grièvement.</p>
+
+        </div>
+
+        
+       
+        <div class="photo-link">
+          <a href="https://www.exemple.com" target="_blank">
+            <img src="Seisme-Al-Haouz.jpg" alt="Séisme d'Al Haouz" >
+          </a>
+        </div>
+      </div>
+  
+      
+      <section class="nouvelles-acquisitions" style="display: none;">
+        <h2>Les dévastations du séisme d'Al Haouz</h2>
+        <div class="acquisition">
+          <img src="photo2.webp" alt="Image 1">
+        </div>
+      </section>
+    </section>
+  </main>
+
+  
+  <script src="script.js"></script>
+</body>
+</html>

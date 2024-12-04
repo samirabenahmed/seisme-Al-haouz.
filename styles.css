@@ -1,0 +1,175 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: rgba(6, 25, 73, 0.122);
+  color: rgb(10, 9, 9);
+  padding: 1em 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+}
+
+header nav ul li {
+  padding: 0 1em;
+}
+
+header nav ul li a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #007bff;
+}
+
+header nav ul li:not(:last-child) {
+  border-right: 1px solid #ddd;
+  padding-right: 1em;
+}
+
+
+.logo-container {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.logo {
+  width: 320px; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Garde les proportions de l'image */
+  margin-bottom: 0.5em;
+}
+
+.logo-container h1 {
+  font-size: 1.5em; /* Ajustez la taille selon vos besoins */
+  color: #333;
+  font-weight: bold;
+}
+ 
+/* Main Layout */
+main {
+  display: flex;
+}
+
+.sidebar {
+  background-color: #ffffff;
+  padding: 1em;
+  width: 25%;
+}
+
+.sidebar input,
+.sidebar button {
+  display: block;
+  margin-bottom: 1em;
+  width: 94%;
+  padding: 0.5em;
+}
+
+.sidebar .connexion {
+  background-color: rgb(218, 6, 6);
+  color: white;
+  padding: 1em;
+}
+
+.sidebar .connexion button {
+  background-color: white;
+  color: red;
+  border: 0px solid red;
+  width: 99%;
+}
+
+.sidebar .connexion button:hover {
+  background-color: darkred;
+  color: white;
+}
+
+/* Content Layout */
+.main-content {
+  width: 75%;
+  padding: 1em;
+}
+
+.content-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.infos {
+  flex: 2;
+  border: 1px solid #b1acac;
+}
+
+.infos h2 {
+  background-color: green;
+  color: white;
+  padding: 13px;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.infos p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin: 10px 15px;
+}
+
+/* Photo and Link Styling */
+.photo-link {
+  margin-top: 1px;
+}
+
+.seisme-image {
+  width: 300%; /* Utilisation de la largeur complète disponible */
+  max-width: 300px; /* Limite la largeur à 600px pour une taille appropriée */
+  height: auto; /* Garde la proportion de l'image */
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nouvelles-acquisitions {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 0px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.nouvelles-acquisitions h2 {
+  background-color: green;
+  color: white;
+  padding: 10px;
+  font-size: 17px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  margin: 0;
+}
+
+.nouvelles-acquisitions .acquisition {
+  display: inline-block;
+  width: 22%;
+  margin: 1%;
+  text-align: center;
+}
+
+.nouvelles-acquisitions img {
+  width: 870px; /* Augmentez la largeur selon votre besoin */
+  height: 300px; /* Modifiez la hauteur en fonction de l'image */
+  margin-bottom: 10px; /* Espacement sous l'image */
+  display: block;
+  margin: 0 auto; /* Centre l'image horizontalement */
+}
